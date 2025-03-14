@@ -22,7 +22,7 @@ export default function PokeCatch() {
   
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-pink-100">
-      <header className="fixed top-0 w-full bg-yellow-300 py-4 text-center text-lg font-bold">
+      <header className="fixed top-0 w-full bg-yellow-300 py-4 text-neutral-900 text-center text-lg font-bold">
         ポケモンずかん
       </header>
       {pokemon ? (
@@ -31,10 +31,10 @@ export default function PokeCatch() {
           <p className="text-xl font-bold mt-4">{pokemon.name}</p>
         </div>
       ) : (
-        <p className="text-lg mt-4">ボタンを押してポケモンをゲット！</p>
+        <p className="text-lg mt-4 text-neutral-900">ボタンを押してポケモンをゲット！</p>
       )}
       <button 
-        className="mt-3 px-4 py-1 bg-yellow-500 text-black text-lg font-bold rounded hover:bg-yellow-300 transition-all duration-200 delay-200 shadow"
+        className="mt-3 px-4 py-1 bg-yellow-500 text-neutral-900 text-lg font-bold rounded hover:bg-yellow-300 transition-all duration-200 delay-200 shadow"
         onClick={fetchRandomPokemon}
       >
         ゲットだぜ！

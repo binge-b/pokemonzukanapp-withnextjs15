@@ -28,7 +28,7 @@ export default function PokeCatch() {
       {pokemon ? (
         <div className="flex flex-col items-center mt-8">
           <Image src={pokemon.imageUrl} alt={pokemon.name} width={150} height={150} />
-          <p className="text-xl font-bold mt-4">{pokemon.name}</p>
+          <p className="text-xl text-neutral-900 font-bold mt-4">{pokemon.name}</p>
         </div>
       ) : (
         <p className="text-lg mt-4 text-neutral-900">ボタンを押してポケモンをゲット！</p>
